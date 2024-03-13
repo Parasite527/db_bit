@@ -181,7 +181,7 @@ true
 { "op" : "command", "ns" : "sber_mongo.$cmd", "command" : { "count" : "Base", "query" : { "hash" : "5d336b01245fbd8c0ae55d5b2889e318bcbc565df348f36801f178f935fd919c", "ver" : 1, "vin_sz" : 1 }, "fields" : {  } }, "keyUpdates" : 0, "numYield" : 4, "lockStats" : { "timeLockedMicros" : { "r" : NumberLong(8296015), "w" : NumberLong(0) }, "timeAcquiringMicros" : { "r" : NumberLong(40), "w" : NumberLong(7) } }, "responseLength" : 48, "millis" : 4284, "execStats" : {  }, "ts" : ISODate("2024-03-13T18:22:25.931Z"), "client" : "127.0.0.1", "allUsers" : [ ], "user" : "" }
 
 ```
-Индекс неудчный, поэтому быстрее не стало (наоборот ощутимо медленнее, хотя у меня сейчас достаточно нагружен компьютер)
+Индекс неудчный, поэтому быстрее не стало (наоборот ощутимо медленнее, в почти 4 раза, хотя у меня сейчас достаточно нагружен компьютер)
 
 Построим другой индекс:
 ```shell
